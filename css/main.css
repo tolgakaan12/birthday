@@ -170,34 +170,14 @@ h1 {
   cursor: default;
 }
 
-/* --- SoundCloud Player (Home Page) --- */
+/* --- SoundCloud Player (Visible) --- */
 .player-bar {
   width: 100%;
-  background-color: transparent; 
-  position: relative;
-  transition: all 0.3s ease;
+  background-color: #1e1e1e;
+  padding: 0;
+  margin-top: 2rem;
 }
 
-.toggle-player {
-  position: absolute;
-  right: 8px;
-  background: transparent;
-  color: #aaa;
-  border: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-  z-index: 10;
-  transition: transform 0.3s ease;
-}
-
-.player-hidden #playerContent {
-  display: none;
-}
-
-.player-hidden {
-  background: transparent !important;
-  box-shadow: none !important;
-}
 
 /* --- Responsive Tweaks --- */
 @media (min-width: 600px) {
@@ -210,15 +190,14 @@ h1 {
   }
 }
 .quality-check {
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
+  text-align: center;
+  margin: 0.5rem 0 1rem 0;
   background-color: #1e1e1e;
   color: #f1f1f1;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 1rem;
   border-radius: 1rem;
   font-size: 0.9rem;
-  opacity: 0.8;
-  pointer-events: none;
-  user-select: none;
+  opacity: 0.85;
+  display: inline-block;
 }
+
