@@ -1,0 +1,43 @@
+body {
+  background-color: #121212;
+  color: #f1f1f1;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 2rem;
+}
+
+.puzzle-container {
+  max-width: 400px;
+  margin: auto;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 100%;
+  aspect-ratio: 1;
+  gap: 2px;
+  margin: 1rem 0;
+}
+
+.tile {
+  background-image: url("../assets/IMG_8338.png");
+  background-size: 300%;
+  cursor: pointer;
+  border: 1px solid #444;
+}
+
+.tile1 { background-position: 0% 0%; }
+.tile2 { background-position: 50% 0%; }
+.tile3 { background-position: 100% 0%; }
+.tile4 { background-position: 0% 50%; }
+.tile5 { background-position: 50% 50%; }
+.tile6 { background-position: 100% 50%; }
+.tile7 { background-position: 0% 100%; }
+.tile8 { background-position: 50% 100%; }
+.tile9 {
+  background: #121212;
+  cursor: default;
+}
