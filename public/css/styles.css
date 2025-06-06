@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background-color: #fafafa;
+  color: #222;
+  line-height: 1.5;
+  padding: 1.5rem;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 70%;
+  max-width: 200px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.bio {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.links h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.links a {
+  display: block;
+  margin: 0.4rem 0;
+  text-decoration: none;
+  color: #0057e7;
+  font-weight: bold;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .bio {
+    font-size: 1.2rem;
+  }
+}
