@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Wall</title>
+  <link rel="stylesheet" href="css/birthday.css">
+
+  <!-- Firebase Compat SDK (works in static HTML projects like yours) -->
+  <script src="https://www.gstatic.com/firebasejs/11.9.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.9.0/firebase-firestore-compat.js"></script>
+
+
+</head>
+<body>
+  <div class="container">
+    <h1 style="color: #f1f1f1; text-align: center;">🎉 İyi ki doğdun Memo! 🎈</h1>
+    <form id="birthdayForm">
+      <label>
+        Name:<br>
+        <input type="text" id="name" required>
+      </label>
+      <label>
+        Message:<br>
+        <textarea id="message" required></textarea>
+      </label>
+      <label>
+        Upload a photo:<br>
+        <input type="file" id="photo" accept="image/*" required>
+      </label>
+      <button type="submit">Add to Wall</button>
+    </form>
+
+    <div id="wall" class="wall"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <script src="js/birthday.js"></script>
+</body>
+</html>
