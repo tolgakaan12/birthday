@@ -56,3 +56,29 @@ h1 {
     font-size: 1.2rem;
   }
 }
+.player-bar {
+  width: 100%;
+  margin-top: 2rem;
+  background-color: #121212;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.4);
+  position: relative;
+  padding-bottom: 0.5rem;
+
+}
+
+.toggle-player {
+  position: absolute;
+  top: -24px;
+  right: 8px;
+  background: transparent;
+  color: #ccc;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: top 0.3s ease;
+}
+
+.toggle-player:hover {
+  color: #fff;
+}
+
