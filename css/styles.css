@@ -58,27 +58,30 @@ h1 {
 }
 .player-bar {
   width: 100%;
-  margin-top: 2rem;
-  background-color: #121212;
-  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.4);
+  background-color: transparent; 
   position: relative;
-  padding-bottom: 0.5rem;
-
+  transition: all 0.3s ease;
 }
 
 .toggle-player {
   position: absolute;
-  top: -24px;
   right: 8px;
   background: transparent;
-  color: #ccc;
+  color: #aaa;
   border: none;
   font-size: 1.2rem;
   cursor: pointer;
-  transition: top 0.3s ease;
+  z-index: 10;
+  transition: transform 0.3s ease;
 }
 
-.toggle-player:hover {
-  color: #fff;
+.player-hidden #playerContent {
+  display: none;
 }
+
+.player-hidden {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
 

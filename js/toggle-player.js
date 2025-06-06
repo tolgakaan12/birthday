@@ -1,4 +1,5 @@
 const toggleBtn = document.getElementById('togglePlayerBtn');
+const playerBar = document.getElementById('playerBar');
 const playerContent = document.getElementById('playerContent');
 
 let isVisible = true;
@@ -6,12 +7,9 @@ let isVisible = true;
 toggleBtn.addEventListener('click', () => {
   isVisible = !isVisible;
 
-  // Toggle visibility
-  playerContent.style.display = isVisible ? 'block' : 'none';
-
-  // Change arrow direction
+  playerBar.classList.toggle('player-hidden', !isVisible);
   toggleBtn.textContent = isVisible ? '▼' : '▲';
 
-  // Move button down when hidden
-  toggleBtn.style.top = isVisible ? '-24px' : '8px';
+  // Move the toggle button position
+  toggleBtn.style.top = isVisible ? '-24px' : '0px';
 });
